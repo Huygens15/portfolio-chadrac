@@ -21,9 +21,9 @@ const Hero = () => {
 
         {/* Colonne droite — Texte */}
         <div className="w-1/2 flex flex-col gap-6">
-          <h3 className="text-yellow-400 text-xl font-semibold">Hello I'm Chadrac</h3>
+          <h3 className="text-yellow-400 text-xl font-semibold">Hello ! I'm Chadrac,</h3>
           <h1 className="text-white text-4xl font-bold uppercase leading-tight">
-            Telecommunications & Networks Engineer (In Training).
+            Telecommunications and Networks Engineer <br />(In Training).
           </h1>
           <p className="text-gray-300 text-lg">
             With a passion for technology, I combine web and mobile development

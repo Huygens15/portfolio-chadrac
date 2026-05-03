@@ -24,12 +24,12 @@ const Header = () => {
 
             {/* ma barre de navigation pour l'ordi*/}
             <nav className="hidden md:flex gap-8">
-                <a href="#" className="text-gray-300 hover:text-yellow-400">Home</a>
-                <a href="#about" className="text-gray-300 hover:text-yellow-400">About me</a>
-                <a href="#parcours" className="text-gray-300 hover:text-yellow-400">Academic Background</a>
-                <a href="#projects" className="text-gray-300 hover:text-yellow-400">Projects</a>
-                <a href="#experience" className="text-gray-300 hover:text-yellow-400">Experiences</a>
-                <a href="#contact" className="text-gray-300 hover:text-yellow-400">Contact</a>
+                <a href="#" className="text-yellow-300 hover:text-white-400 uppercase tracking-widest text-sm">Home</a>
+                <a href="#about" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">About me</a>
+                <a href="#parcours" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Academic Background</a>
+                <a href="#projects" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Projects</a>
+                <a href="#experience" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Experiences</a>
+                <a href="#contact" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Contact</a>
             </nav>
 
             {/* Bouton burger pour mobile */}

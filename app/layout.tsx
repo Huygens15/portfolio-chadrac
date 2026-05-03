@@ -1,36 +1,29 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header";
+import type { Metadata } from 'next';
+import './globals.css';
+import Header from '@/components/Header';
+import { Spline_Sans } from 'next/font/google';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const splineSans = Spline_Sans({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
-  title: "My portfoio",
-  description: "Professionnal Porftfolio",
+  title: 'Mon Portfolio',
+  description: 'Portfolio professionnel',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
-        <Header/>
-        {children}</body>
+    <html lang="fr">
+      <body className={splineSans.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
