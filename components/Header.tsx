@@ -27,7 +27,7 @@ const Header = () => {
             <nav className="hidden md:flex gap-8">
                 <a href="#" className="text-gray-300 hover:text-yellow-400">Home</a>
                 <a href="#about" className="text-gray-300 hover:text-yellow-400">About Me</a>
-                <a href="#parcours" className="text-gray-300 hover:text-yellow-400">Academic Backgruond</a>
+                <a href="#parcours" className="text-gray-300 hover:text-yellow-400">Academic Background</a>
                 <a href="#projects" className="text-gray-300 hover:text-yellow-400">Projects</a>
                 <a href="#experience" className="text-gray-300 hover:text-yellow-400">Experiences</a>
                 <a href="#contact" className="text-gray-300 hover:text-yellow-400">Contact</a>
