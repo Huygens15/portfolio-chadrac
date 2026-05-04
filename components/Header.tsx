@@ -41,12 +41,12 @@ const Header = () => {
         {/* Menu mobile - visible seulement si menuOpen est true */}
         {menuOpen && (
         <nav className="flex flex-col gap-4 mt-4">
-            <a href="#" className="text-gray-300 hover:text-yellow-400">Home</a>
-            <a href="#about" className="text-gray-300 hover:text-yellow-400">About me</a>
-            <a href="#parcours" className="text-gray-300 hover:text-yellow-400">Academic backgruond</a>
-            <a href="#projects" className="text-gray-300 hover:text-yellow-400">Projects</a>
-            <a href="#blog" className="text-gray-300 hover:text-yellow-400">Experiences</a>
-            <a href="#contact" className="text-gray-300 hover:text-yellow-400">Contact</a>
+            <a href="#" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Home</a>
+            <a href="#about" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">About me</a>
+            <a href="#parcours" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Academic backgruond</a>
+            <a href="#projects" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Projects</a>
+            <a href="#blog" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Experiences</a>
+            <a href="#contact" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Contact</a>
         </nav>
       )}
 
