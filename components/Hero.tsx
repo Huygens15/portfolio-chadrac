@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
@@ -30,10 +31,10 @@ const Hero = () => {
             with networking and telecommunications to offer unique and limitless expertise.
           </p>
           <div className="flex gap-4 mt-2">
-            <a href="#" className="bg-yellow-400 text-black px-6 py-3 font-bold hover:bg-yellow-300 transition flex items-center gap-2">
+            <a href="#" className="bg-yellow-400 border-2 border-yellow-400  rounded-2xl  text-black px-6 py-3 font-bold hover:bg-black hover:text-yellow-400 transition flex items-center gap-2">
               Download my CV
             </a>
-            <a href="#about" className="border-2 border-white text-white px-6 py-3 font-bold uppercase hover:bg-white hover:text-black transition flex items-center gap-2">
+            <a href="#about" className="border-2 border-white  rounded-2xl text-white px-6 py-3 font-bold uppercase hover:bg-white hover:text-black transition flex items-center gap-2">
               Know more about me
             </a>
           </div>

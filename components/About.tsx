@@ -8,6 +8,7 @@ const About = () => {
 
         {/* Colonne gauche — Image */}
         <div className="w-1/2">
+          <h3 className="text-yellow-400 text-sm uppercase tracking-widest">About Me</h3> <br />
           <img
             src="/images/about_img.jpg"
             alt="About Chadrac"
@@ -18,10 +19,10 @@ const About = () => {
         {/* Colonne droite — Texte */}
         <div className="w-1/2 flex flex-col gap-6">
 
-          <h3 className="text-yellow-400 text-sm uppercase tracking-widest">About Me</h3>
+          {/* <h3 className="text-yellow-400 text-sm uppercase tracking-widest">About Me</h3> */}
 
-          <h2 className="text-white text-5xl font-bold uppercase leading-tight">
-            I am Chadrac NDAMBA
+          <h2 className="text-white text-2xl font-bold uppercase leading-tight">
+            Telecom & Networks Engineer |<br /><span className="text-yellow-400">Web / Mobile developper</span>.
           </h2>
 
           <p className="text-gray-300 text-lg">
@@ -31,14 +32,14 @@ const About = () => {
           </p>
 
           <div className="flex flex-col gap-3 text-gray-300">
-            <p><span className="text-white font-semibold">Nom :</span> Chadrac Ndamba</p>
-            <p><span className="text-white font-semibold">Email :</span> chadrac@email.com</p>
-            <p><span className="text-white font-semibold">Localisation :</span> Congo</p>
-            <p><span className="text-white font-semibold">Disponibilité :</span> Open aux opportunités</p>
+            <p><span className="text-white font-semibold">Full name :</span>NDAMBA KOUZOU Chadrac</p>
+            <p><span className="text-white font-semibold">Email :</span> chadracncdamba@gmail.com</p>
+            <p><span className="text-white font-semibold">Localisation :</span> Congo- Brazzaville</p>
+            <p><span className="text-white font-semibold">Disponibility :</span> Open to opportunities</p>
           </div>
 
-          <a href="#" className="bg-yellow-400 text-black px-8 py-4 font-bold uppercase tracking-wider hover:bg-yellow-300 transition w-fit">
-            Download my CV 
+          <a href="#projects" className="bg-yellow-400 text-black border-2  rounded-2xl border-yellow-400 px-8 py-4 font-bold uppercase tracking-wider hover:bg-black hover:text-yellow-400 transition duration-300 ease-in-out w-fit">
+            See my projects
           </a>
 
         </div>

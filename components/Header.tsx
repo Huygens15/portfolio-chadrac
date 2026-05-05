@@ -23,13 +23,13 @@ const Header = () => {
             </Link>
 
             {/* ma barre de navigation pour l'ordi*/}
-            <nav className="hidden md:flex gap-8">
-                <a href="#" className="text-yellow-300 hover:text-white-400 uppercase tracking-widest text-sm">Home</a>
-                <a href="#about" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">About me</a>
-                <a href="#parcours" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Academic Background</a>
-                <a href="#projects" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Projects</a>
-                <a href="#experience" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Experiences</a>
-                <a href="#contact" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Contact</a>
+            <nav className="hidden md:flex gap-8  items-center">
+                <a href="#" className="text-yellow-300  hover:text-white uppercase tracking-widest text-sm font-extrabold  transition duration-300">Home</a>
+                <a href="#about" className="text-white hover:text-yellow-400 uppercase tracking-widest text-sm font-extrabold transition duration-300">About me</a>
+                <a href="#parcours" className="text-white hover:text-yellow-400 uppercase tracking-widest text-sm font-extrabold transition duration-300">Academic Background</a>
+                <a href="#projects" className="text-white hover:text-yellow-400 uppercase tracking-widest text-sm font-extrabold ">Projects</a>
+                <a href="#experience" className="text-white hover:text-yellow-400 uppercase tracking-widest text-sm font-extrabold">Experiences</a>
+                <a href="#contact" className="text-white  hover:text-yellow-400 uppercase tracking-widest text-sm font-extrabold">Contact</a>
             </nav>
 
             {/* Bouton burger pour mobile */}
