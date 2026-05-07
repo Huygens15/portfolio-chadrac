@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 
 const experiences = [
   {
-    nom: 'Stage en Administration Réseau',
-    poste: 'Stagiaire Réseau & Télécoms',
+    nom: 'Networks & Telecom intership',
+    poste: 'Datacom technician (intern) ',
     description: 'Participation à la configuration et maintenance de l\'infrastructure réseau. Mise en place de VLANs et gestion des équipements Cisco.',
     image: '/images/testimonial_1.jpg',
   },
@@ -60,7 +60,7 @@ const Experiences = () => {
       {/* 2 cartes */}
       <div className="grid grid-cols-2 gap-8">
         {visible.map((exp, i) => (
-          <div key={i} className="bg-[#111111] p-8 relative flex flex-col gap-4">
+          <div key={i} className="bg-[#111111] p-8 relative flex flex-col gap-4 border-t-2 border-yellow-400">
 
             {/* Photo ronde centrée en haut */}
             <div className="flex justify-center -mt-14 mb-4">

@@ -3,37 +3,38 @@ import React, { useState } from 'react'
 
 const projects = [
   {
-    periode: '2024 - Présent',
-    contexte: 'Projet Personnel',
-    nom: 'Application de Gestion Réseau',
+    periode: 'May 2026',
+    contexte: 'Academic project (ESGAE - CI)',
+    nom: "Building a portfolio with Next.js: front-end architecture and continuous deployment on Netlify",
     description: 'Développement d\'une application web pour monitorer et gérer un réseau local. Utilisation de Next.js pour le frontend et Node.js pour le backend.',
     notions: ['Next.js', 'Node.js','TCP/IP', 'REST API'],
     image: '/images/portfolio_1.jpg',
   },
   {
-    periode: '2023 - 2024',
-    contexte: 'Projet Académique',
-    nom: 'Simulation de Protocoles Réseaux',
-    description: 'Simulation de protocoles TCP/IP et routage dynamique dans un environnement virtuel avec Cisco Packet Tracer.',
-    notions: ['Next.js', 'Node.js','TCP/IP', 'REST API'],
-    image: '/images/portfolio_2.jpg',
-  },
-  {
     periode: '2023',
-    contexte: 'Projet Personnel',
-    nom: 'Application Mobile de Suivi',
-    description: 'Développement d\'une application mobile avec React Native pour le suivi des performances réseau en temps réel.',
-    notions: ['Next.js', 'Node.js','TCP/IP', 'REST API'],
+    contexte: 'Academic project (ENSP - Master)',
+    nom: "Radio Network Planning & Optimization ",
+    description: "Comprehensive study of celllular network planning methologies including site section, coverage prediction and frequency planning. Implementation of optimization techniques to enhance network performance and user experience. ",
+    notions: ['Frequency planning', 'KPI Analysis','Radio access','Drive test'],
     image: '/images/portfolio_3.jpg',
   },
   {
     periode: '2023',
     contexte: 'Projet Personnel',
-    nom: 'Application Mobile de Suivi',
+    nom: 'Development of a full-stack web platform for managing the Cerca center, based on Python/Flask, an SQLite database, and SQLAlchemy (ORM).',
     description: 'Développement d\'une application mobile avec React Native pour le suivi des performances réseau en temps réel.',
-    notions: ['Next.js', 'Node.js','TCP/IP', 'REST API'],
+    notions: ['HTML/CSS/JS', 'Python/Flask','Blueprints/Route', 'Factory app','Flask login','SQLite','SQLAlchemy(ORM)'],
     image: '/images/portfolio_4.jpg',
   },
+  {
+    periode: '2023 - 2024',
+    contexte: 'Network Administration Project',
+    nom: "Designing a Secure IT Monitoring Infrastructure on Ubuntu Server 24.04 LTS Using Zabbix and SNMPv3.",
+    description: "Deployement of entreprise-grade network monitoring solution on ubuntu server featuring Zabbix with SNMPv3 integration for secure equipement supervision, automated alerting system and real-time performance metrics tracking for network devices (switches, routers). ",
+    notions: ["Ubuntu",'Zabbix','SNMPv3',"IP addressing",'OSPF multi-area', 'EIGRP', 'Rerouting'],
+    image: '/images/portfolio_2.jpg',
+  },
+  
 ]
 
 const Projects = () => {
@@ -53,7 +54,7 @@ const Projects = () => {
             </h2>
         </div>
 
-        {/* PARTIE 1 — Liste des projets */}
+        {/* Liste des projets */}
         <div className="flex flex-col mb-20">
             {projects.map((project, index) => (
             <div key={index} className="flex items-center gap-8 py-10 border-b border-white/10">
@@ -84,7 +85,7 @@ const Projects = () => {
             ))}
         </div>
 
-      {/* PARTIE 2 — Galerie slider */}
+      {/* Galerie slider */}
         <div className="flex items-center gap-16">
 
             {/* Photos */}

@@ -86,7 +86,7 @@ const Contact = () => {
 
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-yellow-400 flex items-center justify-center shrink-0">
-                <span className="text-black text-xl">📍</span>
+                <span className="text-black text-xl">B</span>
               </div>
               <div>
                 <p className="text-white font-semibold">Localisation</p>
@@ -96,7 +96,7 @@ const Contact = () => {
 
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 bg-yellow-400 flex items-center justify-center shrink-0">
-                <span className="text-black text-xl">📞</span>
+                <span className="text-black text-xl">Tel</span>
               </div>
               <div>
                 <p className="text-white font-semibold">Téléphone</p>

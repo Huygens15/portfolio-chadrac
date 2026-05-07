@@ -74,7 +74,7 @@ const Footer = () => {
           © 2026 Chadrac Ndamba. Tous droits réservés.
         </p>
         <p className="text-gray-500 text-sm">
-          Développé avec <span className="text-yellow-400">Next.js</span> & <span className="text-yellow-400">Tailwind CSS</span>
+          Developped with <span className="text-yellow-400">Next.js</span> & <span className="text-yellow-400">Tailwind CSS</span>
         </p>
       </div>
 

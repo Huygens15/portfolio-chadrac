@@ -20,7 +20,7 @@ const Parcours = () => {
           <div className="relative">
             {/* Icône jaune qui dépasse au-dessus de l'image */}
             <div className="absolute -top-12 left-6 w-20 h-20 bg-yellow-400 flex items-center justify-center z-10">
-              <span className="text-black text-3xl">🎓</span>
+              <span className="text-black text-3xl">M</span>
             </div>
             <img
               src="/images/service_1.jpg"
@@ -29,12 +29,13 @@ const Parcours = () => {
             />
           </div>
           <div className="flex flex-col gap-3 pt-6">
-            <span className="text-yellow-400 text-sm uppercase tracking-widest">2022 — Présent</span>
+            <span className="text-yellow-400 text-sm uppercase tracking-widest"> 2025 – Ongoing </span>
             <h3 className="text-white text-xl font-bold hover:text-yellow-400 cursor-pointer transition">
-              Licence en Télécommunications et Réseaux
+              Master’s Degree in Telecommunications
             </h3>
             <p className="text-gray-400">
-              Nom de ton école. Description courte de ta formation et des compétences acquises.
+              ENSP - UMNG <br /> Training focused on advanced telecoms' systems, 
+              mobile telephony, transmission technologies, radio frequency and networks. 
             </p>
           </div>
         </div>
@@ -43,7 +44,7 @@ const Parcours = () => {
         <div className="flex flex-col mt-10">
           <div className="relative">
             <div className="absolute -top-12 left-6 w-20 h-20 bg-yellow-400 flex items-center justify-center z-10">
-              <span className="text-black text-3xl">📚</span>
+              <span className="text-black text-3xl">L</span>
             </div>
             <img
               src="/images/service_2.jpg"
@@ -52,12 +53,12 @@ const Parcours = () => {
             />
           </div>
           <div className="flex flex-col gap-3 pt-6">
-            <span className="text-yellow-400 text-sm uppercase tracking-widest">2019 — 2022</span>
+            <span className="text-yellow-400 text-sm uppercase tracking-widest">2021 — 2024</span>
             <h3 className="text-white text-xl font-bold hover:text-yellow-400 cursor-pointer transition">
-              Baccalauréat Scientifique
+              Bachelor’s Degree in Electronics and Telecommunications 
             </h3>
             <p className="text-gray-400">
-              Nom de ton lycée. Description courte de tes années au lycée.
+              ENSP - UMNG <br /> My technical project : Optimization of CDN network traffic on the IP backbone between BZ & PN : Congo Telecom. 
             </p>
           </div>
         </div>
@@ -66,7 +67,7 @@ const Parcours = () => {
         <div className="flex flex-col mt-10">
           <div className="relative">
             <div className="absolute -top-12 left-6 w-20 h-20 bg-yellow-400 flex items-center justify-center z-10">
-              <span className="text-black text-3xl">✏️</span>
+              <span className="text-black text-3xl">Cer</span>
             </div>
             <img
               src="/images/service_3.jpg"
@@ -77,10 +78,10 @@ const Parcours = () => {
           <div className="flex flex-col gap-3 pt-6">
             <span className="text-yellow-400 text-sm uppercase tracking-widest">2016 — 2019</span>
             <h3 className="text-white text-xl font-bold hover:text-yellow-400 cursor-pointer transition">
-              Brevet d'Études du Premier Cycle
+            CCNA 200-301 Commutation & Advanced routing | IP Services
             </h3>
             <p className="text-gray-400">
-              Nom de ton collège. Description courte de tes années au collège.
+              Alphorm <br /> Implementation of VLANs/trunks, inter-VLAN routing (ROAS, SVI), OSPF configuration (SPF, Hello, neighbor, messages), DHCP management (server, client, relay agent), and SNMP monitoring (NMS, SNMPv1/v2/v3 on Cisco IOS).
             </p>
           </div>
         </div>
