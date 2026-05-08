@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
-import Particles from 'react-tsparticles'
 
 
 const About = () => {
@@ -14,7 +13,7 @@ const About = () => {
         <motion.div className="w-1/2" 
           initial={{ opacity: 0, x: -80 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
+          transition={{ duration: 1.5, ease: 'easeOut' }}
           viewport={{ once: true }}
         >
           <h3 className="text-yellow-400 text-sm uppercase tracking-widest">About Me</h3> <br />
@@ -33,7 +32,7 @@ const About = () => {
           <motion.h2 className="text-white text-2xl font-bold uppercase leading-tight" 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 1.5, delay: 0.3 }}
             viewport={{ once: true }}>
             Telecom & Networks Engineer |<br /><span className="text-yellow-400">Web / Mobile developper</span>.
           </motion.h2>
@@ -41,7 +40,7 @@ const About = () => {
           <motion.p className="text-gray-300 text-lg"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 1.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
             As a telecommunications engineer in training, I am developing expertise in IP networks, mobile technologies, and radio engineering. Passionate about technology, I combine this knowledge with strong skills in web and mobile development, enabling me to design and implement innovative digital solutions that bridge connectivity and software. Resilient and highly motivated, I thrive in complex environments and aim to contribute to real‑world projects at leading companies, where advanced technical expertise and immersive experiences foster both professional growth and impactful innovation in the field of telecommunications and digital technologies.
@@ -50,16 +49,16 @@ const About = () => {
           <motion.div className="flex flex-col gap-3 text-gray-300" 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 1.5, delay: 0.5 }}
             viewport={{ once: true }}
           >
             {/* <p><span className="text-white font-semibold">Disponibility :</span> Open to opportunities</p> */}
           </motion.div>
 
-          <motion.a href="#projects" className="bg-yellow-400 text-black border-2  rounded-2xl border-yellow-400 px-8 py-4 font-bold uppercase tracking-wider hover:bg-black hover:text-yellow-400 transition duration-300 ease-in-out w-fit"
+          <motion.a href="#projects" className="bg-yellow-400 text-black border-2  rounded-2xl border-yellow-400 px-8 py-4 font-bold tracking-wider hover:bg-black hover:text-yellow-400 transition duration-300 ease-in-out w-fit"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 1.5, delay: 0.6 }}
             viewport={{ once: true }}
           >
             See my projects

@@ -1,19 +1,30 @@
+'use client'
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Parcours = () => {
   return (
    <section id="parcours" className="px-16 py-20">
 
       {/* Titre centré */}
-      <div className="text-center mb-16">
+      <motion.div className="text-center mb-16" 
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      viewport={{ once: true }}>
         <h3 className="text-yellow-400 text-sm uppercase tracking-widest mb-3">The only real school is the one of discipline, pain, and hard work.</h3>
         <h2 className="text-white text-5xl font-bold uppercase leading-tight">
           My Academic Background
         </h2>
-      </div>
+      </motion.div>
 
       {/* 3 cartes en grille */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-8"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+      viewport={{ once: true }}
+      >
 
         {/* Carte 1 */}
         <div className="flex flex-col mt-10 rounded-2xl">
@@ -86,7 +97,7 @@ const Parcours = () => {
           </div>
         </div>
 
-      </div>
+      </motion.div>
 
     </section>
   )

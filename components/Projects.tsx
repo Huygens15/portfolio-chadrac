@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 
 const projects = [
   {
@@ -47,17 +48,27 @@ const Projects = () => {
     <section id="projects" className="px-16 py-20">
 
         {/* Titre centré */}
-        <div className="text-center mb-16">
+        <motion.div className="text-center mb-16" 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true }}
+        >
             <h3 className="text-yellow-400 text-sm uppercase tracking-widest mb-3">Skills improve with practice.</h3>
             <h2 className="text-white text-5xl font-bold uppercase leading-tight">
                 My Skills & Completed Projects
             </h2>
-        </div>
+        </motion.div>
 
         {/* Liste des projets */}
         <div className="flex flex-col mb-20">
             {projects.map((project, index) => (
-            <div key={index} className="flex items-center gap-8 py-10 border-b border-white/10">
+            <motion.div key={index} className="flex items-center gap-8 py-10 border-b border-white/10" 
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.5, delay: index * 0.1 }}
+            viewport={{ once: true }}
+            >
                 {/* Colonne 1 — Période et contexte */}
                 <div className="w-1/4">
                 <h4 className="text-white text-2xl font-bold">{project.periode}</h4>
@@ -81,12 +92,17 @@ const Projects = () => {
                     ))}
                     </div>
                 </div>
-            </div>
+            </motion.div>
             ))}
         </div>
 
       {/* Galerie slider */}
-        <div className="flex items-center gap-16">
+        <motion.div className="flex items-center gap-16"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true }}
+        >
 
             {/* Photos */}
             <div className="w-2/3 flex gap-4">
@@ -143,7 +159,7 @@ const Projects = () => {
                 </div>
             </div>
 
-        </div>
+        </motion.div>
 
     </section>
   )

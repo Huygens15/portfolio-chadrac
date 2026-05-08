@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 
 const experiences = [
   {
@@ -39,12 +40,15 @@ const Experiences = () => {
 
       {/* En-tête */}
       <div className="flex items-start justify-between mb-16">
-        <div>
-          <h3 className="text-yellow-400 text-sm uppercase tracking-widest mb-3">Expériences</h3>
+        <motion.div initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true }}>
+          <h3 className="text-yellow-400 text-sm uppercase tracking-widest mb-3">Experiences</h3>
           <h2 className="text-white text-5xl font-bold uppercase leading-tight max-w-lg">
             My Professional Experience
           </h2>
-        </div>
+        </motion.div>
 
         {/* Boutons navigation */}
         <div className="flex gap-3 mt-4">
@@ -58,7 +62,11 @@ const Experiences = () => {
       </div>
 
       {/* 2 cartes */}
-      <div className="grid grid-cols-2 gap-8">
+      <motion.div className="grid grid-cols-2 gap-8" 
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}>
         {visible.map((exp, i) => (
           <div key={i} className="bg-[#111111] p-8 relative flex flex-col gap-4 border-t-2 border-yellow-400">
 
@@ -85,7 +93,7 @@ const Experiences = () => {
 
           </div>
         ))}
-      </div>
+      </motion.div>
 
     </section>
   )
