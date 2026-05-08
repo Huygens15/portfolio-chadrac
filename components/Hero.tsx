@@ -47,7 +47,7 @@ const Hero = () => {
             },
             number: {
               value: 60,
-              density: { enable: true, value_area : 800},
+              density: { enable: true},
             },
             opacity: { value: 0.3 },
             size: { value: { min: 1, max: 3 } },
