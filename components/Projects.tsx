@@ -12,7 +12,7 @@ const projects = [
     image: '/images/portfolio_1.jpg',
   },
   {
-    periode: '2023',
+    periode: '2026 March',
     contexte: 'Academic project (ENSP - Master)',
     nom: "Radio Network Planning & Optimization ",
     description: "Comprehensive study of celllular network planning methologies including site section, coverage prediction and frequency planning. Implementation of optimization techniques to enhance network performance and user experience. ",
@@ -20,10 +20,10 @@ const projects = [
     image: '/images/portfolio_3.jpg',
   },
   {
-    periode: '2023',
-    contexte: 'Projet Personnel',
+    periode: '2025 Nov - 2026 Feb',
+    contexte: 'Projet ',
     nom: 'Development of a full-stack web platform for managing the Cerca center, based on Python/Flask, an SQLite database, and SQLAlchemy (ORM).',
-    description: 'Développement d\'une application mobile avec React Native pour le suivi des performances réseau en temps réel.',
+    description: "Development of a full-stack web platform for managing the Cerca Center, built using Python/Flask with SQLite and SQLAlchemy (ORM). It includes a front-end for learners (registration, course tracking, personalized dashboard) and a back-end for administration (course management, sessions, users, reporting). The solution is designed to be secure, scalable, and user-friendly, centralizing educational activities and enhancing the experience for both learners and administrators.",
     notions: ['HTML/CSS/JS', 'Python/Flask','Blueprints/Route', 'Factory app','Flask login','SQLite','SQLAlchemy(ORM)'],
     image: '/images/portfolio_4.jpg',
   },

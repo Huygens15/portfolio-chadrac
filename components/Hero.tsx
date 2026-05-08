@@ -67,10 +67,10 @@ const Hero = () => {
         className="w-full md:w-1/2 flex items-end justify-center" initial={{ opacity: 0, x: -80}} animate={{ opacity: 1, x: 0}} transition={{ duration: 1.5, ease: 'easeOut'}}
         >
           <img
-            src="/images/banner_img.png"
+            src="/images/chad.jpg"
             alt="Chadrac Ndamba"
             // className="w-3/4 h-auto object-contain"
-            className="w-1/2 md:w-3/4 h-auto object-contain"
+            className="w-1/2 md:w-3/4 h-auto object-contain rounded-full border-2 border-yellow-400"
           />
         </motion.div>
 

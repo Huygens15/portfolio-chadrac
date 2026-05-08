@@ -6,8 +6,8 @@ const experiences = [
   {
     nom: 'Networks & Telecom intership',
     poste: 'Datacom technician (intern) ',
-    description: 'Participation à la configuration et maintenance de l\'infrastructure réseau. Mise en place de VLANs et gestion des équipements Cisco.',
-    image: '/images/testimonial_1.jpg',
+    description: "Configured and deployed Cisco LAN/WAN equipment, monitored connectivity with L2/L3 troubleshooting, and managed customer integration into ISP cloud platforms with IP addressing and service provisioning.",
+    image: '/images/congotelecom.png',
   },
   {
     nom: 'Projet de Fin d\'Études',

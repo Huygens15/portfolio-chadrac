@@ -1,6 +1,8 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
+import { FaUniversity, FaGraduationCap, FaCertificate } from "react-icons/fa";
+
 
 const Parcours = () => {
   return (
@@ -31,11 +33,11 @@ const Parcours = () => {
           <div className="relative">
             {/* Icône jaune qui dépasse au-dessus de l'image */}
             <div className="absolute -top-12 left-6 w-20 h-20 bg-yellow-400 flex items-center justify-center z-10">
-              <span className="text-black text-3xl">M</span>
+              <span className="text-black text-3xl"><FaUniversity className="text-black text-3xl" /></span>
             </div>
             <img
-              src="/images/service_1.jpg"
-              alt="Licence"
+              src="/images/ma.jpg"
+              alt="master"
               className="w-full h-64 object-cover"
             />
           </div>
@@ -55,11 +57,11 @@ const Parcours = () => {
         <div className="flex flex-col mt-10">
           <div className="relative">
             <div className="absolute -top-12 left-6 w-20 h-20 bg-yellow-400 flex items-center justify-center z-10">
-              <span className="text-black text-3xl">L</span>
+              <span className="text-black text-3xl"><FaGraduationCap className="text-black text-3xl" /></span>
             </div>
             <img
               src="/images/service_2.jpg"
-              alt="Baccalauréat"
+              alt="Bachelor's degree"
               className="w-full h-64 object-cover"
             />
           </div>
@@ -78,11 +80,11 @@ const Parcours = () => {
         <div className="flex flex-col mt-10">
           <div className="relative">
             <div className="absolute -top-12 left-6 w-20 h-20 bg-yellow-400 flex items-center justify-center z-10">
-              <span className="text-black text-3xl">Cer</span>
+              <span className="text-black text-3xl"><FaCertificate className="text-black text-3xl" /></span>
             </div>
             <img
               src="/images/service_3.jpg"
-              alt="BEPC"
+              alt="certificate"
               className="w-full h-64 object-cover"
             />
           </div>
