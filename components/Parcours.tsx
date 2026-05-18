@@ -6,7 +6,7 @@ import { FaUniversity, FaGraduationCap, FaCertificate } from "react-icons/fa";
 
 const Parcours = () => {
   return (
-   <section id="parcours" className="px-16 py-20">
+   <section id="parcours" className="px-6 md:px-16 py-20">
 
       {/* Titre centré */}
       <motion.div className="text-center mb-16" 
@@ -14,8 +14,8 @@ const Parcours = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: 'easeOut' }}
       viewport={{ once: true }}>
-        <h3 className="text-yellow-400 text-sm uppercase tracking-widest mb-3">The only real school is the one of discipline, pain, and hard work.</h3>
-        <h2 className="text-white text-5xl font-bold uppercase leading-tight">
+        <h3 className="text-yellow-400 text-xs md:text-sm uppercase tracking-widest mb-3">The only real school is the one of discipline, pain, and hard work.</h3>
+        <h2 className="text-white text-3xl md:text-5xl font-bold uppercase leading-tight">
           My Academic Background
         </h2>
       </motion.div>
@@ -32,7 +32,7 @@ const Parcours = () => {
         <div className="flex flex-col mt-10 rounded-2xl">
           <div className="relative">
             {/* Icône jaune qui dépasse au-dessus de l'image */}
-            <div className="absolute -top-12 left-6 w-20 h-20 bg-yellow-400 flex items-center justify-center z-10">
+            <div className="absolute -top-12 left-6 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center z-10">
               <span className="text-black text-3xl"><FaUniversity className="text-black text-3xl" /></span>
             </div>
             <img
@@ -47,7 +47,7 @@ const Parcours = () => {
               Master’s Degree in Telecommunications
             </h3>
             <p className="text-gray-400">
-              ENSP - UMNG <br /> Training focused on advanced telecoms' systems, 
+              ENSP - UMNG - Brazzaville <br /> Training focused on advanced telecoms' systems, 
               mobile telephony, transmission technologies, radio frequency and networks. 
             </p>
           </div>
@@ -56,11 +56,11 @@ const Parcours = () => {
         {/* Carte 2 */}
         <div className="flex flex-col mt-10">
           <div className="relative">
-            <div className="absolute -top-12 left-6 w-20 h-20 bg-yellow-400 flex items-center justify-center z-10">
+            <div className="absolute -top-12 left-6 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center z-10">
               <span className="text-black text-3xl"><FaGraduationCap className="text-black text-3xl" /></span>
             </div>
             <img
-              src="/images/service_2.jpg"
+              src="/images/bachelor.jpg"
               alt="Bachelor's degree"
               className="w-full h-64 object-cover"
             />
@@ -71,7 +71,7 @@ const Parcours = () => {
               Bachelor’s Degree in Electronics and Telecommunications 
             </h3>
             <p className="text-gray-400">
-              ENSP - UMNG <br /> My technical project : Optimization of CDN network traffic on the IP backbone between BZ & PN : Congo Telecom. 
+              ENSP - UMNG - Brazzaville<br /> My technical project : Optimization of CDN network traffic on the IP backbone between BZ & PN : Congo Telecom. 
             </p>
           </div>
         </div>
@@ -79,22 +79,22 @@ const Parcours = () => {
         {/* Carte 3 */}
         <div className="flex flex-col mt-10">
           <div className="relative">
-            <div className="absolute -top-12 left-6 w-20 h-20 bg-yellow-400 flex items-center justify-center z-10">
+            <div className="absolute -top-12 left-6 w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center z-10">
               <span className="text-black text-3xl"><FaCertificate className="text-black text-3xl" /></span>
             </div>
             <img
-              src="/images/service_3.jpg"
+              src="/images/bac.jpg"
               alt="certificate"
               className="w-full h-64 object-cover"
             />
           </div>
           <div className="flex flex-col gap-3 pt-6">
-            <span className="text-yellow-400 text-sm uppercase tracking-widest">2016 — 2019</span>
+            <span className="text-yellow-400 text-sm uppercase tracking-widest">2020 - 2021</span>
             <h3 className="text-white text-xl font-bold hover:text-yellow-400 cursor-pointer transition">
-            CCNA 200-301 Commutation & Advanced routing | IP Services
+              Science track (Series D) high school diploma
             </h3>
             <p className="text-gray-400">
-              Alphorm <br /> Implementation of VLANs/trunks, inter-VLAN routing (ROAS, SVI), OSPF configuration (SPF, Hello, neighbor, messages), DHCP management (server, client, relay agent), and SNMP monitoring (NMS, SNMPv1/v2/v3 on Cisco IOS).
+              High School, 30 Mars 1970 - Pointe-Noire
             </p>
           </div>
         </div>

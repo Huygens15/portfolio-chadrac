@@ -25,13 +25,13 @@ const Footer = () => {
           </p>
           {/* Réseaux sociaux */}
           <div className="flex gap-4 mt-2">
-            <a href="#" className="w-10 h-10 border border-gray-600 flex items-center justify-center text-gray-400 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 transition">
+            <a href="#" className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 transition">
               <FaLinkedinIn />
             </a>
-            <a href="#" className="w-10 h-10 border border-gray-600 flex items-center justify-center text-gray-400 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 transition">
+            <a href="#" className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 transition">
               <FaGithub />
             </a>
-            <a href="#" className="w-10 h-10 border border-gray-600 flex items-center justify-center text-gray-400 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 transition">
+            <a href="#" className="w-10 h-10 border border-gray-600 rounded-full flex items-center justify-center text-gray-400 hover:bg-yellow-400 hover:text-black hover:border-yellow-400 transition">
               <FaTwitter />
             </a>
           </div>
@@ -55,19 +55,19 @@ const Footer = () => {
           <h4 className="text-white text-lg font-bold uppercase tracking-widest">Contact</h4>
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-yellow-400 flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
                 <span className="text-black text-sm"><MdEmail className="text-black text-xl" /></span>
               </div>
               <p className="text-gray-400 text-sm">chadracncdamba@gmail.com</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-yellow-400 flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
                 <span className="text-black text-sm"><MdLocationOn className="text-black text-xl" /></span>
               </div>
               <p className="text-gray-400 text-sm">Congo - Brazzaville</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-yellow-400 flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
                 <span className="text-black text-sm"><MdPhone className="text-black text-xl" /></span>
               </div>
               <p className="text-gray-400 text-sm">+242 06 921 7447 / 05 578 9780</p>
@@ -80,7 +80,7 @@ const Footer = () => {
       {/* Ligne de séparation + copyright */}
       <div className="border-t border-gray-700 mt-12 pt-6 flex items-center justify-between">
         <p className="text-gray-500 text-sm">
-          © 2026 Chadrac Ndamba. All rights reserved.
+          © 2026 Chadrac NDAMBA. All rights reserved.
         </p>
         <p className="text-gray-500 text-sm">
           Developped with <span className="text-yellow-400">Next.js</span> & <span className="text-yellow-400">Tailwind CSS</span>

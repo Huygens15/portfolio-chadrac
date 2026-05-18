@@ -82,7 +82,7 @@ const Contact = () => {
           <div className="flex flex-col gap-6">
 
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-yellow-400 flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
                 <span className="text-black text-xl"><MdEmail className="text-black text-xl" /></span>
               </div>
               <div>
@@ -92,7 +92,7 @@ const Contact = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-yellow-400 flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
                 <span className="text-black text-xl"><MdLocationOn className="text-black text-xl" /></span>
               </div>
               <div>
@@ -102,7 +102,7 @@ const Contact = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 bg-yellow-400 flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center shrink-0">
                 <span className="text-black text-xl"><MdPhone className="text-black text-xl" /></span>
               </div>
               <div>

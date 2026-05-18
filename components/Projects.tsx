@@ -1,15 +1,16 @@
 'use client'
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
 const projects = [
   {
     periode: 'May 2026',
     contexte: 'Academic project (ESGAE - CI)',
     nom: "Building a portfolio with Next.js: front-end architecture and continuous deployment on Netlify",
-    description: 'Développement d\'une application web pour monitorer et gérer un réseau local. Utilisation de Next.js pour le frontend et Node.js pour le backend.',
+    description: "Development of a portfolio using Next.js, focused on building a modern front‑end architecture with optimized performance and scalability. The project integrates continuous deployment on Netlify, ensuring automated updates, streamlined workflows, and reliable delivery of new features.",
     notions: ['Next.js', 'Node.js','TCP/IP', 'REST API'],
-    image: '/images/portfolio_1.jpg',
+    image: '/images/pic.png',
   },
   {
     periode: '2026 March',
@@ -17,15 +18,23 @@ const projects = [
     nom: "Radio Network Planning & Optimization ",
     description: "Comprehensive study of celllular network planning methologies including site section, coverage prediction and frequency planning. Implementation of optimization techniques to enhance network performance and user experience. ",
     notions: ['Frequency planning', 'KPI Analysis','Radio access','Drive test'],
-    image: '/images/portfolio_3.jpg',
+    image: '/images/planif.webp',
   },
   {
-    periode: '2025 Nov - 2026 Feb',
+    periode: '2026 May',
+    contexte: 'Academic project (ENSP - Master)',
+    nom: "Atmospheric effects (absorption, rain attenuation, tropospheric effects, influence of weather conditions) on radio propagation ",
+    description: "Analysis of the impact of atmospheric conditions on radio wave propagation, linking theoretical foundations (Maxwell’s equations, Helmholtz equations) to modern applications. It quantifies the main phenomena causing signal degradation: molecular absorption, rain attenuation, as well as tropospheric effects such as refraction, ducting, and scintillation. The study highlights the challenges for satellite links, radars, and 5G/6G networks, and proposes mitigation techniques to ensure the reliability of communications. Translated with DeepL.com (free version) ",
+    notions: ['Radio propagation', 'Satellites','Troposphere','Rain attenuation',"Maxwell's equations"],
+    image: '/images/img1.png',
+  },
+  {
+    periode: '2025 Nov - Feb 2026',
     contexte: 'Projet ',
     nom: 'Development of a full-stack web platform for managing the Cerca center, based on Python/Flask, an SQLite database, and SQLAlchemy (ORM).',
     description: "Development of a full-stack web platform for managing the Cerca Center, built using Python/Flask with SQLite and SQLAlchemy (ORM). It includes a front-end for learners (registration, course tracking, personalized dashboard) and a back-end for administration (course management, sessions, users, reporting). The solution is designed to be secure, scalable, and user-friendly, centralizing educational activities and enhancing the experience for both learners and administrators.",
     notions: ['HTML/CSS/JS', 'Python/Flask','Blueprints/Route', 'Factory app','Flask login','SQLite','SQLAlchemy(ORM)'],
-    image: '/images/portfolio_4.jpg',
+    image: '/images/cerca.png',
   },
   {
     periode: '2023 - 2024',
@@ -33,7 +42,7 @@ const projects = [
     nom: "Designing a Secure IT Monitoring Infrastructure on Ubuntu Server 24.04 LTS Using Zabbix and SNMPv3.",
     description: "Deployement of entreprise-grade network monitoring solution on ubuntu server featuring Zabbix with SNMPv3 integration for secure equipement supervision, automated alerting system and real-time performance metrics tracking for network devices (switches, routers). ",
     notions: ["Ubuntu",'Zabbix','SNMPv3',"IP addressing",'OSPF multi-area', 'EIGRP', 'Rerouting'],
-    image: '/images/portfolio_2.jpg',
+    image: '/images/zabbix.png',
   },
   
 ]
@@ -107,7 +116,7 @@ const Projects = () => {
             {/* Photos */}
             <div className="w-2/3 flex gap-4">
                 {[current, (current + 1) % projects.length].map((idx, i) => (
-                <div key={i} className="w-1/2 relative overflow-hidden group">
+                <div key={i} className="w-1/2 relative overflow-hidden group rounded-4xl border-2 border-yellow-400">
                     <img
                     src={projects[idx].image}
                     alt="Projet"
@@ -148,13 +157,13 @@ const Projects = () => {
                 <div className="flex gap-4">
                 <button
                     onClick={prev}
-                    className="w-12 h-12 border border-white text-white hover:bg-yellow-400 hover:text-black hover:border-yellow-400 transition text-xl">
-                    ←
+                    className="w-12 h-12 border border-gray-600 text-white  hover:text-black hover:border-yellow-400 transition text-xl flex items-center justify-center">
+                    <FaChevronLeft className="text-yellow-400 text-2xl cursor-pointer" />
                 </button>
                 <button
                     onClick={next}
-                    className="w-12 h-12 border border-white text-white hover:bg-yellow-400 hover:text-black hover:border-yellow-400 transition text-xl">
-                    →
+                    className="w-12 h-12 border border-gray-600 text-white  hover:text-black hover:border-yellow-400 transition text-xl flex items-center justify-center">
+                    <FaChevronRight className="text-yellow-400 text-2xl cursor-pointer" />
                 </button>
                 </div>
             </div>

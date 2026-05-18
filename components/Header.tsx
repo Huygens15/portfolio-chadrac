@@ -14,11 +14,11 @@ const Header = () => {
     }, []);
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-16 py-3 ${
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 md:px-16 py-3 ${
     scrolled ? 'bg-black/90 backdrop-blur-sm shadow-lg ' : 'bg-transparent'}`}>
 
         <div className="flex items-center justify-between ">
-            <Link href="/" className="text-white text-2xl font-bold tracking-widest">
+            <Link href="/" className="text-white text-lg md:text-2xl font-bold tracking-widest">
                 CHADRAC NDAMBA<span className="text-yellow-400">.</span>
             </Link>
 
@@ -40,7 +40,10 @@ const Header = () => {
 
         {/* Menu mobile - visible seulement si menuOpen est true */}
         {menuOpen && (
-        <nav className="flex flex-col gap-4 mt-4">
+        <nav 
+        // className="flex flex-col gap-4 mt-4"
+        className="md:hidden flex flex-col gap-4 mt-4 pb-4 bg-black/95 px-4 py-4"
+        >
             <a href="#" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Home</a>
             <a href="#about" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">About me</a>
             <a href="#parcours" className="text-gray-300 hover:text-yellow-400 uppercase tracking-widest text-sm">Academic backgruond</a>

@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const experiences = [
   {
@@ -52,11 +53,11 @@ const Experiences = () => {
 
         {/* Boutons navigation */}
         <div className="flex gap-3 mt-4">
-          <button onClick={prev} className="w-12 h-12 border border-gray-600 text-white hover:border-yellow-400 hover:text-yellow-400 transition text-xl">
-            ‹
+          <button onClick={prev} className="w-12 h-12 border border-gray-600 text-white hover:border-yellow-400 hover:text-yellow-400 transition text-xl  flex items-center justify-center">
+            <FaChevronLeft className="text-yellow-400 text-2xl cursor-pointer" />
           </button>
-          <button onClick={next} className="w-12 h-12 border border-gray-600 text-white hover:border-yellow-400 hover:text-yellow-400 transition text-xl">
-            ›
+          <button onClick={next} className="w-12 h-12 border border-gray-600 text-white hover:border-yellow-400 hover:text-yellow-400 transition text-xl flex items-center justify-center">
+            <FaChevronRight className="text-yellow-400 text-2xl cursor-pointer" />
           </button>
         </div>
       </div>
